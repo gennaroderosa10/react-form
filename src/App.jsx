@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import articoli from './assets/articoli'
 
 function App() {
-  const [newArticolo, setNewArticolo] = useState(null)
+  const [newArticolo, setNewArticolo] = useState("")
 
   return (
     <>
@@ -25,9 +25,10 @@ function App() {
           )
         })}
 
-
-        <label for="inputArticolo" className="form-label">Inserisci un nuovo articolo</label>
-        <input type="text" id="inputArticolo" className="form-control"></input>
+        <form>
+          <label for="inputArticolo" className="form-label">Inserisci un nuovo articolo</label>
+          <input type="text" id="inputArticolo" className="form-control"></input>
+        </form>
       </main>
     </>
   )
